@@ -151,7 +151,7 @@
         }
 
         .login-submit:disabled:hover {
-            background-color:#727272
+            background-color: #727272
         }
 
 
@@ -159,7 +159,7 @@
         .login-submit:hover {
             border: 0;
             text-shadow: 0 1px rgba(0, 0, 0, .3);
-            background-color:  #5b6ca3
+            background-color: #5b6ca3
         }
 
 
@@ -294,7 +294,7 @@
 
         .button {
             background-color: #2d48a1;
-;
+            ;
             border: none;
             color: white;
             padding: 15px 32px;
@@ -380,7 +380,9 @@
             border: 1px solid rgb(63, 63, 63);
             background-color: lightgrey;
             color: black;
-            text-align: left
+            text-align: left;
+            font-size: 10px;		    
+
         }
 
         .footer {
@@ -388,7 +390,8 @@
             width: 100%;
             background-color: #e0e0e0;
             color: black;
-            text-align: center
+            text-align: center;
+	    font-size: 10px
         }
 
         .warning2 {
@@ -396,7 +399,9 @@
             width: 100%;
             background-color: #e81a4b;
             color: white;
-            text-align: left
+            text-align: left;
+            font-size: 8px;  		    
+
         }
 
         /* unvisited link */
@@ -430,15 +435,42 @@
             font-size: 14px;
         }
 
+        .videoTicker {
+            background-color: #eeeeee;
+            overflow: auto;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+        }
+
+	#vid {
+		margin: 50 auto;
+		display: block;
+	}
+
+
+
+
+
+        .videoItem {
+            margin: 10px;
+        }
+
+
+
 
         .desktopItem {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             margin-left: 15px;
             margin-right: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 60px;
             margin-top: 30px;
         }
+
+	.desktopItem p {
+		font-size: 20px;
+	}
 
         .videoFooter {
             background-color: #e0e0e0;
@@ -453,17 +485,12 @@
         }
 
         .lineText {
-            width: 90%;
             text-align: center;
-            border-bottom: 1px solid #aaaaaa;
-            line-height: 0.1em;
-            margin: 10px 0 20px;
-            font-size: 14px;
-            color: #555555;
+            margin: 10px;
         }
 
         .lineText span {
-            background: #eeeeee;
+            font-size: 12px;
             padding: 0 10px;
         }
     </style>
@@ -494,7 +521,7 @@
             <b>FOR MORE INFORMATION</b>
             <ul>
                 <li><a href="https://coronavirus.datafree.co/">Covid-19 Corona Virus South African Portal</a></li>
-                <li><a href="http://10.2.0.10/COVID-19.pdf">The Cononavirus: No-Panic Helpguide</a></li>
+                <li><a href="http://splash.inethi.net/COVID-19.pdf">The Cononavirus: No-Panic Helpguide</a></li>
 
             </ul>
 
@@ -549,9 +576,9 @@
     </div>
 
 
-    <h3 className="lineText">
-        <span>Free local services</span>
-    </h3>
+    <div class="lineText" >
+	    <span><b>Free local services test</b></span>
+    </div>
     <div class="desktop">
 
         <!--<div class=desktopItem>
@@ -564,49 +591,49 @@
 
         <div class=desktopItem>
             <a href="http://owncloud.inethi.net">
-                <img src="captiveportal-owncloud.ico" height="80">
+                <img src="captiveportal-owncloud.ico" height="120">
                 <p></p>
             </a>
             <p> OwnCloud <i>user:inethi password: inethi</i></p>
         </div>
         <div class=desktopItem>
             <a href="http://chat.inethi.net:3000">
-                <img src="captiveportal-rocketchat.ico" height="80">
+                <img src="captiveportal-rocketchat.ico" height="120">
                 <p></p>
             </a>
             <p>Rocket Chat</p>
         </div>
         <div class=desktopItem>
             <a href="http://inethibox.inethi.net">
-                <img src="captiveportal-wikifundi.ico" height="80">
+                <img src="captiveportal-wikifundi.ico" height="120">
                 <p></p>
             </a>
             <p>Internet in a box </p>
         </div>
         <div class=desktopItem>
             <a href="http://inethibox.inethi.net/kiwix/wikipedia_en_simple_all_novid_2018-06/">
-                <img src="captiveportal-wikipedia.png" height="80">
+                <img src="captiveportal-wikipedia.png" height="120">
                 <p></p>
             </a>
             <p>Wikipedia</p>
         </div>
         <div class=desktopItem>
             <a href="http://inethibox.inethi.net/kiwix/ted_en_science_2018-07/">
-                <img src="captiveportal-TEDtalk.png" height="80">
+                <img src="captiveportal-TEDtalk.png" height="120">
                 <p></p>
             </a>
             <p>TED Talks Science</p>
         </div>
         <div class=desktopItem>
             <a href="http://inethibox.inethi.net/kiwix/teded_en_all_2017-10/">
-                <img src="captiveportal-TEDtalk.png" height="80">
+                <img src="captiveportal-TEDtalk.png" height="120">
                 <p></p>
             </a>
             <p>TED Talks Education</p>
         </div>
         <div class=desktopItem>
             <a href="http://inethibox.inethi.net/kiwix/ted_en_global_issues_2018-07/">
-                <img src="captiveportal-TEDtalk.png" height="80">
+                <img src="captiveportal-TEDtalk.png" height="120">
                 <p></p>
             </a>
             <p>TED Talks Global issues</p>
@@ -614,21 +641,21 @@
 
     </div>
 
-    <h3 className="lineText">
-        <span>Free Internet services</span>
-    </h3>
 
+    <div class="lineText" >
+	    <span><b>Free Internet services</b></span>
+    </div>
     <div class="desktop">
         <div class=desktopItem>
             <a href="https://coronavirus.datafree.co">
-                <img src="captiveportal-covid19.png" height="80">
+                <img src="captiveportal-covid19.png" height="120">
                 <p></p>
             </a>
             <p>COVID-19 Info</p>
         </div>
         <div class=desktopItem>
             <a href="http://easyclass.com">
-                <img src="captiveportal-easyclass.png" height="80">
+                <img src="captiveportal-easyclass.png" height="120">
                 <p></p>
             </a>
             <p>EasyClass</p>
@@ -644,8 +671,31 @@
 
     </div>
 
-    <br />
-    <br />
+
+    <div class="lineText" >
+	    <span><b>Latest popular videos</b></span>
+    </div>
+
+    <div class="videoTicker">
+        <video id="vid" height="300" controls poster="http://splash.inethi.net/images/noedy.jpg">
+            <source src="http://splash.inethi.net/videos/noedy.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="vid" height="300"  controls poster="http://splash.inethi.net/images/cameron.jpg">
+            <source src="http://splash.inethi.net/videos/cameron.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="vid" height="300"   controls poster="http://splash.inethi.net/images/ovnews1.jpg">
+            <source src="http://splash.inethi.net/videos/ovnews1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="vid" height="300"  controls poster="http://splash.inethi.net/images/workshop1.jpg">
+            <source src="http://splash.inethi.net/videos/workshop1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+
     <br />
     <!--<h3 className="lineText">
         <span>Top local video uploads</span>
@@ -677,8 +727,8 @@
         </div>
     </div>
 
-    <br />
     <br />-->
+
     <div class="footer">
         <span> <i>Operated by </i> <strong>OVCOMM DYNAMIC</strong></span>
         <br />
