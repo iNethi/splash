@@ -503,24 +503,22 @@
     </div>
 
     
-    <button class="floatButton" type="button" onclick="location.href='http://inethi.org.za'">Home</button>
+    <button class="floatButton" type="button" onclick="viewdiv('logincard')">Common login</button>
 
 
     <div class="login-card" , id="logincard">
 
-        <span> <i>To access the Internet enter your username and password or voucher number. </i></span>
+        <span> <i>This is a common login for all your services </i></span>
         <br />
 
         <br />
         <div class="loginform">
-            <div id="error-message">
-                #PORTAL_MESSAGE#
-            </div>
+           
             <form name="login_form" method="post" action="#PORTAL_ACTION#">
                 <input type="text" name="auth_user" placeholder="User" id="auth_user">
                 <input type="password" name="auth_pass" placeholder="Password" id="auth_pass">
                 <br />
-                <input onkeyup="copyFunction()" type="text" name="auth_voucher" placeholder="Voucher" id="auth_voucher">
+                
 
                 <div class="login-help">
                     <ul class="list">
@@ -566,14 +564,28 @@
                 <img src="captiveportal-nextcloud.png" height="80">
                 <p></p>
             </a>
-            <p> Nextcloud</p>
+            <p> iNethiCloud</p>
         </div>
         <div class=desktopItem>
             <a href="http://plexg.inethi.net:32400/web" target="_blank"> 
                 <img src="captiveportal-plex.png" height="80">
                 <p></p>
             </a>
-            <p> Plex </p>
+            <p> iNethiPlex </p>
+        </div>
+        <div class=desktopItem>
+            <a href="http://avideog.inethi.net" target="_blank"> 
+                <img src="captiveportal-avideo.png" height="80">
+                <p></p>
+            </a>
+            <p> iNethiTube </p>
+        </div>
+        <div class=desktopItem>
+            <a href="http://www.inethi.net" target="_blank"> 
+                <img src="captiveportal-rocketchat.png" height="80">
+                <p></p>
+            </a>
+            <p> iNethiChat </p>
         </div>
        
         
